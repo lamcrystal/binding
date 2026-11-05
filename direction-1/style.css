@@ -1,0 +1,13 @@
+:root{
+	--type-md: 1.5rem;
+
+	--color-main: brown;
+
+	--font-display: "Arial", sans-serif;
+}
+body{
+	font-family: var(--font-display);
+	font-size: var(--type-md);
+	color: var(--color-main);
+
+}
