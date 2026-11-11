@@ -11,8 +11,8 @@
 	--color-bg: papayawhip;
 
 /* Fonts */
-	--font-heading: "Helvetica", sans-serif;
-	--font-body
+	--font-heading: "Georgia", serif;
+	--font-body: "Helvetica", sans-serif;
 
 	--text-width: 60ch;
 }
@@ -44,4 +44,9 @@ h2 {
 p {
 	max-inline-size: var(--text-width);
 	margin-block-end: var(--space-md);
+}
+
+footer {
+	margin-block-start: var(--space-xl);
+	font-size: var(--text-sm);
 }
