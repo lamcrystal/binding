@@ -1,13 +1,30 @@
 :root{
-	--type-md: 1.5rem;
+/* Text sizes */
+	--text-body: 1.2rem;
+	--text-sm: calc(var(--text-body) * 0.8);
+	--text-md: calc(var(--text-body) * 1.5);
+	--text-h2: calc(var(--text-body) * 2);
+	--text-h1: calc(var(--text-body) * 3);
 
+/* Colours */
 	--color-main: brown;
+	--color-bg: papayawhip;
 
-	--font-display: "Arial", sans-serif;
+/* Fonts */
+	--font-heading: "Helvetica", sans-serif;
+	--font-body
+
+	--text-width: 60ch;
 }
-body{
-	font-family: var(--font-display);
-	font-size: var(--type-md);
-	color: var(--color-main);
 
+body{
+	font-family: var(--font-body);
+	font-size: var(--text-md);
+	color: var(--color-main);
+	background-color: var(--color-bg);
+}
+
+p {
+	max-inline-size: var(--text-width);
+	margin-block-end: var(--space-md);
 }
