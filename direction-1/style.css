@@ -33,8 +33,7 @@ body{
 	line-height: 1.6;
 }
 
-h1,
-h2 {
+h1, h2, h3 {
 	font-family: var(--font-heading);
 	line-height: 1.1;
 }
@@ -51,6 +50,15 @@ h2 {
 p {
 	max-inline-size: var(--text-width);
 	margin-block-end: var(--space-md);
+}
+
+a {
+	color: var(--color-main);
+	text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
 }
 
 blockquote {
