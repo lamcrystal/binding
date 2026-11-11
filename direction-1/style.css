@@ -46,6 +46,15 @@ p {
 	margin-block-end: var(--space-md);
 }
 
+blockquote {
+	font-family: var(--font-heading);
+	font-size: var(--text-md);
+	line-height: var(--leading-heading);
+	margin-block: var(--space-lg);
+	padding-inline-start: var(--space-md);
+	border-inline-start: 0.5rem solid var(--color-main);
+}
+
 footer {
 	margin-block-start: var(--space-xl);
 	font-size: var(--text-sm);
