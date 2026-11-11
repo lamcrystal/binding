@@ -1,0 +1,27 @@
+:root{
+/* Text sizes */
+	--text-body: 1.1rem;
+	--text-sm: calc(var(--text-body) * 0.8);
+	--text-md: calc(var(--text-body) * 1.5);
+	--text-h2: calc(var(--text-body) * 2);
+	--text-h1: calc(var(--text-body) * 3);
+
+/* Spacing */
+	--space-md: calc(var(--text-body) * 1.6);
+	--space-sm: calc(var(--space-md) / 2);
+	--space-lg: calc(var(--space-md) * 2);
+	--space-xl: calc(var(--space-md) * 4);
+
+/* Colours */
+	--color-bg: papayawhip;
+	--color-main: darkslategray;
+	--color-accent: blue;
+}
+
+body{
+	color: var(--color-main);
+	background-color: var(--color-bg);
+	padding-block: var(--space-lg);
+	padding-inline: var(--space-sm);
+	line-height: 1.6;
+}
