@@ -6,7 +6,7 @@
 	--text-sm: calc(var(--text-body) * 1.1);
 	--text-md: calc(var(--text-body) * 1.5);
 	--text-xl: calc(var(--text-body) * 2);
-	--text-h2: calc(var(--text-body) * 2.2);
+	--text-h2: calc(var(--text-body) * 2.4);
 	--text-h1: calc(var(--text-body) * 3.7);
 
 /* Spacing */
@@ -147,11 +147,12 @@ section:nth-of-type(2) {
 	h2,
 	a {
 		color: var(--color-bg);
+		text-decoration-color: var(--color-main);
 	}
 
 	blockquote {
 		color: var(--color-bg);
-		border-color: var(--color-bg);
+		border-color: var(--color-main);
 	}
 }
 
