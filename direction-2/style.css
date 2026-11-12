@@ -118,7 +118,7 @@ article > header {
 	}
 }
 
-/* Quotes light and bigger, with a line on the side instead of a block */
+/* Quotes */
 blockquote {
 	font-size: var(--text-md);
 	font-weight: 300;
