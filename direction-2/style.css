@@ -2,7 +2,7 @@
 :root{
 /* Text sizes */
 	--text-body: 1.1rem;
-	--text-sm: calc(var(--text-body) * 0.8);
+	--text-sm: calc(var(--text-body) * 0.85);
 	--text-md: calc(var(--text-body) * 1.5);
 	--text-h2: calc(var(--text-body) * 2);
 	--text-h1: calc(var(--text-body) * 2.7);
@@ -57,7 +57,7 @@ p {
 	margin-block-end: var(--space-md);
 }
 
-/* Classic blue links like the early web?  */
+/* Classic blue links like the early web? */
 a {
 	font-family: var(--font-heading);
 	color: var(--color-accent);
@@ -77,7 +77,7 @@ em {
 	font-style: italic;
 }
 
-/* Nav as plain links with a line underneath */
+/* Nav */
 body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-sm);
@@ -92,7 +92,7 @@ body > header {
 	/* Links side by side */
 	li {
 		display: inline-block;
-		margin-inline-end: var(--space-md);
+		margin-inline-end: var(--space-sm);
 	}
 
 a {
