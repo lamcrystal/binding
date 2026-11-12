@@ -91,7 +91,7 @@ em {
 /* Nav and footer links */
 nav a,
 footer a {
-	font-family: var(--font-heading);
+	font-family: var(--font-body);
 	font-size: var(--text-sm);
 	text-decoration: none;
 }
@@ -140,7 +140,8 @@ article > header {
 	}
 
 	.subtitle {
-		font-size: var(--text-xl);
+		font-family: var(--font-heading);
+		font-size: var(--text-lg);
 		line-height: 1.3;
 		margin-block-start: var(--space-sm);
 		margin-block-end: var(--space-md);
