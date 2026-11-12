@@ -85,7 +85,7 @@ em {
 	font-style: italic;
 }
 
-/* Nav as small uppercase labels */
+/* Nav */
 body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
