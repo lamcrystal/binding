@@ -13,15 +13,40 @@
 	--space-xl: calc(var(--space-md) * 4);
 
 /* Colours */
-	--color-bg: papayawhip;
+	--color-bg: beige;
 	--color-main: darkslategray;
 	--color-accent: blue;
+
+	/* Fonts */
+	--font-heading: "IBM Plex Mono", monospace;
+	--font-body: "IBM Plex Sans", sans-serif;
+
 }
 
 body{
+	font-family: var(--font-body);
+	font-size: var(--text-body);
 	color: var(--color-main);
 	background-color: var(--color-bg);
 	padding-block: var(--space-lg);
 	padding-inline: var(--space-sm);
 	line-height: 1.6;
+}
+
+h1, h2 {
+	font-family: var(--font-heading);
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: var(--text-h1);
+}
+
+h2 {
+	font-size: var(--text-h2);
+	padding-block-end: var(--space-xs);
+	border-block-end: var(--border-thin) solid var(--color-main);
+	margin-block-start: var(--space-xl);
+	margin-block-end: var(--space-md);
 }
