@@ -20,6 +20,7 @@
 	--color-bg: midnightblue;
 	--color-main: seashell;
 	--color-accent: hotpink;
+	--color-hover: lightpink;
 
 /* Fonts */
 	--font-heading: "Bebas Neue", sans-serif;
@@ -89,6 +90,8 @@ body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
 	padding-block: var(--space-sm);
+	background-color: var(--color-accent);
+	padding-block: var(--space-sm);
 
 	ul {
 		list-style: none;
@@ -101,12 +104,8 @@ body > header {
 	}
 
 	a {
-		color: var(--color-accent);
+		color: var(--color-main);
 		text-decoration: none;
-
-		&:hover {
-			color: var(--color-main);
-		}
 	}
 }
 
