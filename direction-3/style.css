@@ -91,7 +91,8 @@ blockquote {
 	font-family: var(--font-heading);
 	font-size: var(--text-lg);
 	color: var(--color-main);
-	margin-block: var(--space-xl);
+	margin-block: var(--space-md);
+	border-inline-start: var(--space-sm) solid var(--color-main);
 
 	p {
 		margin-block-end: var(--space-sm);
