@@ -1,7 +1,8 @@
 :root {
-	--text-body: 1rem;
+	--text-body: 1.2rem;
 	--text-sm: calc(var(--text-body) * 0.8);
-	--text-title: calc(var(--text-body) * 3);
+	--text-h1: calc(var(--text-body) * 4);
+
 
 	--space-md: calc(var(--text-body) * 1.5);
 	--space-sm: calc(var(--space-md) / 2);
@@ -17,7 +18,7 @@ body {
 
 /* Title */
 h1 {
-	font-size: var(--text-title);
+	font-size: var(--text-h1);
 	margin-block-end: var(--space-sm);
 }
 
@@ -28,6 +29,7 @@ footer {
 
 /* Sketch links */
 nav {
+	font-size: var(--text-);
 	margin-block-start: var(--space-lg);
 
 	li {
