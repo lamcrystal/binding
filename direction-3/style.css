@@ -128,8 +128,9 @@ blockquote {
 	font-size: var(--text-xl);
 	line-height: 1.2;
 	color: var(--color-main);
-	padding-inline-start: var(--space-md);
-	border-inline-start: var(--border-thin) solid var(--color-accent);
+	text-align: right;
+	padding-inline-end: var(--space-md);
+	border-inline-end: var(--border-thin) solid var(--color-accent);
 	margin-block: var(--space-lg);
 
 	p {
