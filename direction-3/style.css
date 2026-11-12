@@ -4,6 +4,7 @@
 	--text-body: 1.1rem;
 	--text-sm: calc(var(--text-body) * 0.8);
 	--text-md: calc(var(--text-body) * 1.5);
+	--text-lg: calc(var(--text-body) * 1.5);
 	--text-h2: calc(var(--text-body) * 2);
 	--text-h1: calc(var(--text-body) * 3);
 
@@ -28,7 +29,7 @@ body{
 	font-size: var(--text-body);
 	color: var(--color-main);
 	background-color: var(--color-bg);
-	padding-block: var(--space-lg);
+	padding-block: var(--space-sm);
 	padding-inline: var(--space-sm);
 	line-height: 1.6;
 }
@@ -61,5 +62,38 @@ a {
 
 	&:hover {
 		color: var(--color-main);
+	}
+}
+
+/* Nav as small uppercase labels */
+body > header {
+	font-family: var(--font-heading);
+	font-size: var(--text-sm);
+	margin-block-end: var(--space-xl);
+
+	ul {
+		list-style: none;
+	}
+
+	/* Links side by side */
+	li {
+		display: inline-block;
+		margin-inline-end: var(--space-md);
+	}
+
+	a {
+		color: var(--color-accent);
+		text-decoration: none;
+	}
+}
+
+blockquote {
+	font-family: var(--font-heading);
+	font-size: var(--text-lg);
+	color: var(--color-main);
+	margin-block: var(--space-xl);
+
+	p {
+		margin-block-end: var(--space-sm);
 	}
 }
