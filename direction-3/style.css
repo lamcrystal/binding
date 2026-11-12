@@ -51,6 +51,7 @@ h1, h2 {
 
 h1 {
 	font-size: var(--text-h1);
+	text-align: right;
 }
 
 /* Section headings in pink */
@@ -113,7 +114,7 @@ body > header {
 article > header {
 	color: var(--color-bg);
 	background-color: var(--color-main);
-	padding-block: var(--space-lg);
+	padding-block: var(--space-md);
 
 	/* Author, date and source small and navy on the light band */
 	p,
@@ -128,8 +129,8 @@ article > header {
 		font-size: var(--text-md);
 		line-height: 1.3;
 		color: var(--color-bg);
-		margin-block-start: var(--space-md);
-		margin-block-end: var(--space-md);
+		margin-block-start: var(--space-sm);
+		margin-block-end: var(--space-sm);
 	}
 }
 
