@@ -4,8 +4,8 @@
 	--text-body: 1.1rem;
 	--text-sm: calc(var(--text-body) * 0.8);
 	--text-md: calc(var(--text-body) * 1.5);
-	--text-h2: calc(var(--text-body) * 2);
-	--text-h1: calc(var(--text-body) * 2.7);
+	--text-h2: calc(var(--text-body) * 1.8);
+	--text-h1: calc(var(--text-body) * 2.5);
 
 /* Spacing */
 	--space-md: calc(var(--text-body) * 1.6);
@@ -21,7 +21,6 @@
 	/* Fonts */
 	--font-heading: "DM Mono", monospace;
 	--font-body: "Manrope", sans-serif;
-
 }
 
 body{
