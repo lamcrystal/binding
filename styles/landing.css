@@ -1,12 +1,44 @@
+:root {
+	--text-body: 1rem;
+	--text-sm: calc(var(--text-body) * 0.8);
+	--text-title: calc(var(--text-body) * 3);
+
+	--space-md: calc(var(--text-body) * 1.5);
+	--space-sm: calc(var(--space-md) / 2);
+	--space-lg: calc(var(--space-md) * 2);
+}
+
 body {
 	font-family: Helvetica, sans-serif;
-	padding: 2rem;
+	font-size: var(--text-body);
+	line-height: 1.5;
+	padding: var(--space-lg) var(--space-md);
 }
 
+/* Title */
 h1 {
-	font-size: 3rem;
+	font-size: var(--text-title);
+	margin-block-end: var(--space-sm);
 }
 
-nav li {
-	margin-block-start: 1rem;
+header p,
+footer {
+	font-size: var(--text-sm);
+}
+
+/* Sketch links */
+nav {
+	margin-block-start: var(--space-lg);
+
+	li {
+		margin-block-end: var(--space-sm);
+	}
+
+	a {
+		color: black;
+	}
+}
+
+footer {
+	margin-block-start: var(--space-lg);
 }
