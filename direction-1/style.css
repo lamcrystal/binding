@@ -24,9 +24,6 @@
 /* Fonts */
 	--font-heading: "Libre Baskerville", serif;
 	--font-body: "Jost", sans-serif;
-
-/* Widths */
-	--text-width: 60ch;
 }
 
 body {
