@@ -7,7 +7,7 @@
 	--text-md: calc(var(--text-body) * 1.5);
 	--text-xl: calc(var(--text-body) * 2);
 	--text-h2: calc(var(--text-body) * 2.4);
-	--text-h1: calc(var(--text-body) * 3.7);
+	--text-h1: calc(var(--text-body) * 4.2);
 
 /* Spacing */
 	--space-xs: calc(var(--space-md) / 10);
