@@ -17,9 +17,9 @@
 	--space-xl: calc(var(--space-md) * 4);
 
 /* Colours */
-	--color-bg: black;
+	--color-bg: rgb(34, 34, 34);
 	--color-main: seashell;
-	--color-accent: hotpink;
+	--color-accent: rgb(255, 117, 179);
 	--color-hover: lightpink;
 
 /* Fonts */
