@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+/* Text sizes, all built from the body size */
+	--text-body: 1.1rem;
+	--text-sm: calc(var(--text-body) * 1.1);
+	--text-md: calc(var(--text-body) * 1.5);
+	--text-xl: calc(var(--text-body) * 2);
+	--text-h2: calc(var(--text-body) * 2.4);
+	--text-h1: calc(var(--text-body) * 4.2);
+
+/* Spacing */
+	--space-xs: calc(var(--space-md) / 10);
+	--space-sm: calc(var(--space-md) / 2);
+	--space-md: calc(var(--text-body) * 1.6);
+	--space-lg: calc(var(--space-md) * 2);
+	--space-xl: calc(var(--space-md) * 4);
+
+/* Colours */
+	--color-bg: rgb(34, 34, 34);
+	--color-main: seashell;
+	--color-accent: rgb(255, 117, 179);
+	--color-hover: lightpink;
+
+/* Fonts */
+	--font-heading: "Bebas Neue", sans-serif;
+	--font-body: "Rubik", sans-serif;
+}
+
+body {
+	font-family: var(--font-body);
+	font-size: var(--text-body);
+	color: var(--color-main);
+	background-color: var(--color-bg);
+	line-height: 1.6;
+}
+
+/* Side padding on each part instead of body so the colour bands can go edge to edge */
+body > header,
+article > header,
+section,
+footer {
+	padding-inline: var(--space-sm);
+}
+
+/* Headings */
+h1, h2 {
+	font-family: var(--font-heading);
+	line-height: 1;
+}
+
+h1 {
+	font-size: var(--text-h1);
+	text-align: right;
+}
+
+/* Section headings in pink */
+h2 {
+	font-size: var(--text-h2);
+	color: var(--color-accent);
+	margin-block-end: var(--space-md);
+}
+
+/* Body text */
+p {
+	max-inline-size: var(--text-width);
+	margin-block-end: var(--space-md);
+}
+
+/* Links */
+a {
+	color: var(--color-accent);
+	text-decoration: underline;
+
+	&:hover {
+		color: var(--color-main);
+	}
+}
+
+/* Emphasis */
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+/* Nav */
+body > header {
+	font-family: var(--font-heading);
+	font-size: var(--text-md);
+	text-align: end;
+	background-color: var(--color-accent);
+	padding-block: var(--space-sm);
+
+	ul {
+		list-style: none;
+	}
+
+	/* Links side by side */
+	li {
+		display: inline-block;
+		margin-inline-start: var(--space-sm);
+	}
+
+	a {
+		color: var(--color-bg);
+		text-decoration: none;
+
+		&:hover {
+			color: var(--color-main);
+		}
+	}
+}
+
+/* Article title section */
+article > header {
+	color: var(--color-bg);
+	background-color: var(--color-main);
+	padding-block: var(--space-md);
+
+	/* Author, date and source small and navy on the light band */
+	p,
+	time {
+		display: block;
+		font-size: var(--text-xs);
+		color: var(--color-bg);
+		margin-block-end: 0;
+	}
+
+	.subtitle {
+		font-size: var(--text-md);
+		line-height: 1.3;
+		color: var(--color-bg);
+		margin-block-start: var(--space-sm);
+		margin-block-end: var(--space-sm);
+	}
+}
+
+/* Sections as full colour bands that change as you scroll */
+section {
+	padding-block: var(--space-lg);
+}
+
+/* Second section flips to pink */
+section:nth-of-type(2) {
+	color: var(--color-bg);
+	background-color: var(--color-accent);
+
+	h2,
+	a {
+		color: var(--color-bg);
+		text-decoration-color: var(--color-main);
+	}
+
+	blockquote {
+		color: var(--color-bg);
+		border-color: var(--color-main);
+	}
+}
+
+/* Third section flips to light */
+section:nth-of-type(3) {
+	color: var(--color-bg);
+	background-color: var(--color-main);
+
+	a,
+	blockquote {
+		color: var(--color-bg);
+	}
+}
+
+/* Quotes big and pushed to the right */
+blockquote {
+	font-family: var(--font-heading);
+	font-size: var(--text-xl);
+	line-height: 1.1;
+	color: var(--color-main);
+	text-align: end;
+	padding-inline-end: var(--space-md);
+	border-inline-end: var(--space-xs) solid var(--color-accent);
+	margin-block: var(--space-lg);
+
+	p {
+		max-inline-size: none;
+		margin-block-end: var(--space-sm);
+	}
+}
+
+/* Footer */
+footer {
+	font-size: var(--text-sm);
+	padding-block: var(--space-md);
+
+	a{
+		font-size: var(--text-md);
+		font-family: var(--font-heading);
+		text-decoration: none;
+	}
+}
