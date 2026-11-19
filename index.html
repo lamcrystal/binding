@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Binding</title>
+		<title>The Designed Feeling</title>
 		<style>
 			@import 'styles/reset.css' layer(reset);
 			@import 'styles/common.css' layer(common);
-			@import 'styles/landing.css' layer(landing);
+			@import 'styles/landing.css' layer(page);
 		</style>
 	</head>
 	<body>
-			<header>
-				<p>Type & Interaction 2026-2027</p>
-				<h1>Binding</h1>
-				<nav>
-					<ul>
-						<li>
-							<a href="../gradients/">Gradients</a>
-						</li>
-						<li>
-							<a href="../hooked-on-a-feeling/">Feeling</a>
-						</li>
-						<li>
-							<a href="../dynamic-identities/">Identities</a>
-						</li>
-					</ul>
-				</nav>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html" aria-current="page">Cover</a></li>
+					<li><a href="gradients/">Gradients</a></li>
+					<li><a href="hooked-on-a-feeling/">Feeling</a></li>
+					<li><a href="dynamic-identities/">Identities</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Cover -->
+			<header class="cover">
+				<h1><span class="title-key">Designed</span> Feeling</h1>
+				<p>A collection of three texts exploring how design makes us feel a certain way, and how much of that feeling is designed on purpose.</p>
 			</header>
 
-			<main>
-				<p>Exploring how design makes us feel a certain way, and how much of that feeling is designed on purpose.</p>
-			</main>
+			<!-- Table of contents: each chapter shows its own article's colours -->
+			<section class="contents">
+				<h2>Contents</h2>
+				<ol>
+					<li class="chapter gradients">
+						<h3><a href="gradients/">Gradients: the colorful design trend aiming to soothe these anxious times</a></h3>
+						<p class="author">Daisy Alioto, 2019</p>
+						<p>How a soft, sunset-coloured trend became a way to make us feel calm.</p>
+					</li>
+					<li class="chapter feeling">
+						<h3><a href="hooked-on-a-feeling/">Hooked on a Feeling</a></h3>
+						<p class="author">Michael Rock, 2015</p>
+						<p>Why brands now sell feelings instead of functions.</p>
+					</li>
+					<li class="chapter identities">
+						<h3><a href="dynamic-identities/">Dynamic Identities</a></h3>
+						<p class="author">Paul Davis, 2015</p>
+						<p>How identities are designed as systems that change but stay recognisable.</p>
+					</li>
+				</ol>
+			</section>
 
-			<footer>
-				<p>by Crystal Lam</p>
-			</footer>
+			<!-- Colophon -->
+			<section class="colophon">
+				<h2>Colophon</h2>
+				<p>Texts by Daisy Alioto, Michael Rock and Paul Davis. All essays belong to their authors.</p>
+				<p>Set in Bebas Neue and Rubik.</p>
+				<p>Designed and coded in HTML and CSS by Crystal Lam for Typography &amp; Interaction, 2026–2027.</p>
+			</section>
+		</main>
+
+		<footer>
+			<a href="#">Return to top</a>
+		</footer>
 	</body>
 </html>
