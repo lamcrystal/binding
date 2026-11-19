@@ -55,7 +55,7 @@ h1 {
 	font-size: var(--text-h1);
 	text-align: right;
 
-	/* Key word of the title huge on its own line */
+	/* Key word of the title bigger on its own line */
 	.title-key {
 		display: block;
 		font-size: var(--text-title-key);

@@ -7,7 +7,9 @@
 	--text-md: calc(var(--text-body) * 1.5);
 	--text-xl: calc(var(--text-body) * 2);
 	--text-h2: calc(var(--text-body) * 2.4);
-	--text-h1: calc(var(--text-body) * 4.2);
+	--text-h1: calc(var(--text-body) * 3.7);
+	/* Big word in title */
+	--text-title-key: calc(var(--text-body) * 5.5);
 
 /* Spacing */
 	--space-xs: calc(var(--space-md) / 10);
@@ -53,6 +55,11 @@ h1, h2 {
 h1 {
 	font-size: var(--text-h1);
 	text-align: right;
+		/* Key word of the title bigger on its own line */
+	.title-key {
+		display: block;
+		font-size: var(--text-title-key);
+	}
 }
 
 /* Section headings in pink */
