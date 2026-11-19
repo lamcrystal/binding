@@ -27,7 +27,7 @@
 	--font-heading: "Bebas Neue", sans-serif;
 	--font-body: "Rubik", sans-serif;
 
-/* Widths */
+/* Width */
 	--text-width: 55ch;
 }
 
@@ -111,11 +111,11 @@ em {
 	font-style: italic;
 }
 
-/* Nav as an accent band */
+/* Nav as an accent band, links centered */
 body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
-	text-align: end;
+	text-align: center;
 	background-color: var(--color-accent);
 	padding-block: var(--space-sm);
 
@@ -123,10 +123,10 @@ body > header {
 		list-style: none;
 	}
 
-	/* Links side by side */
+	/* Links side by side, with equal space on both sides so the row stays centered */
 	li {
 		display: inline-block;
-		margin-inline-start: var(--space-sm);
+		margin-inline: var(--space-xs);
 	}
 
 	a {

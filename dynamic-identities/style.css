@@ -3,7 +3,7 @@
 :root {
 /* Text sizes, all built from the body size */
 	--text-body: 1.1rem;
-	--text-sm: calc(var(--text-body) * 0.8);
+	--text-sm: calc(var(--text-body) * 1.1);
 	--text-md: calc(var(--text-body) * 1.5);
 	--text-xl: calc(var(--text-body) * 2);
 	--text-h2: calc(var(--text-body) * 2.4);
@@ -109,7 +109,6 @@ em {
 body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
-	text-align: end;
 	background-color: var(--color-accent);
 	padding-block: var(--space-sm);
 

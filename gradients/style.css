@@ -20,7 +20,7 @@
 
 /* Colours */
 	--color-bg: rgb(34, 26, 81);
-	--color-main: rgb(246, 200, 255);
+	--color-main: rgb(231, 202, 237);
 	--color-accent: rgb(252, 115, 168);
 	--color-mid: rgb(12, 12, 158);
 	--color-hover: rgb(183, 179, 255);
@@ -54,7 +54,6 @@ h1, h2 {
 
 h1 {
 	font-size: var(--text-h1);
-	text-align: right;
 		/* Key word of the title bigger on its own line */
 	.title-key {
 		display: block;
@@ -98,7 +97,6 @@ em {
 body > header {
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
-	text-align: end;
 	background-color: var(--color-accent);
 	padding-block: var(--space-sm);
 
@@ -153,7 +151,7 @@ section {
 
 /* First section in bright blue with white text so it stays readable */
 section:nth-of-type(1) {
-	color: var(--color-accent);
+	color: var(--color-main);
 	background-color: var(--color-mid);
 
 	h2,
