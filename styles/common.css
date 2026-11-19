@@ -27,9 +27,6 @@
 /* Fonts */
 	--font-heading: "Bebas Neue", sans-serif;
 	--font-body: "Rubik", sans-serif;
-
-/* Width */
-	--text-width: 55ch;
 }
 
 body {
