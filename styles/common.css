@@ -5,8 +5,9 @@
 :root {
 /* Text sizes, all built from the body size */
 	--text-body: 1.1rem;
-	--text-sm: calc(var(--text-body) * 0.8);
+	--text-sm: calc(var(--text-body) * 1.1);
 	--text-md: calc(var(--text-body) * 1.5);
+	--text-lg: calc(var(--text-body) * 1.6);
 	--text-xl: calc(var(--text-body) * 2);
 	--text-h2: calc(var(--text-body) * 2.4);
 	--text-h1: calc(var(--text-body) * 4.2);
@@ -111,22 +112,27 @@ em {
 	font-style: italic;
 }
 
-/* Nav as an accent band, links centered */
+/* Nav as a sticky accent band that stays at the top while you scroll */
 body > header {
+	position: sticky;
+	inset-block-start: 0;
+	z-index: 10;
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
-	text-align: center;
 	background-color: var(--color-accent);
 	padding-block: var(--space-sm);
 
+	/* On mobile the links spread across the full width so all four fit on one line */
 	ul {
+		display: flex;
+		justify-content: space-between;
 		list-style: none;
-	}
 
-	/* Links side by side, with equal space on both sides so the row stays centered */
-	li {
-		display: inline-block;
-		margin-inline: var(--space-xs);
+		/* On desktop they sit together in the middle with more space between them */
+		@media (width > 700px) {
+			justify-content: center;
+			gap: var(--space-lg);
+		}
 	}
 
 	a {
@@ -136,6 +142,11 @@ body > header {
 		&:hover {
 			color: var(--color-main);
 		}
+	}
+
+	/* Current page underlined so you know where you are */
+	a[aria-current="page"] {
+		text-decoration: underline;
 	}
 }
 

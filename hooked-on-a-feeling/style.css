@@ -106,6 +106,9 @@ em {
 
 /* Nav */
 body > header {
+	position: sticky;
+	inset-block-start: 0;
+	z-index: 10;
 	font-family: var(--font-heading);
 	font-size: var(--text-md);
 	background-color: var(--color-accent);
