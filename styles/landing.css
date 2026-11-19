@@ -1,10 +1,14 @@
-/* Landing page */
-
 /* Cover as a dark band */
 .cover {
 	color: var(--color-main);
 	background-color: var(--color-bg);
 	padding: var(--space-lg) var(--space-sm);
+
+/* Key words of the title bigger */
+.title-key {
+		display: block;
+		font-size: var(--text-title-key);
+	}
 
 	p {
 		font-size: var(--text-md);
@@ -12,7 +16,7 @@
 	}
 }
 
-/* Contents on a light band so the coloured chapter blocks stand out */
+/* Contents on a light band so the coloured article blocks stand out */
 .contents {
 	color: var(--color-bg);
 	background-color: var(--color-main);
@@ -26,7 +30,7 @@
 	}
 }
 
-/* Each chapter as a block in its own article's colours */
+/* Each article as a block in its own colours */
 .chapter {
 	color: var(--color-main);
 	background-color: var(--color-bg);
