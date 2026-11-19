@@ -63,9 +63,9 @@ main > header {
 
 /* Each chapter uses the same colours as its article */
 .gradients {
-	--color-bg: rgb(12, 12, 158);
-	--color-main: rgb(231, 202, 237);
-	--color-accent: rgb(252, 115, 168);
+	--color-bg: rgb(40, 40, 176);
+	--color-main: rgb(243, 226, 247);
+	--color-accent: rgb(193, 121, 227);
 }
 
 .feeling {
