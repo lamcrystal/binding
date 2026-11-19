@@ -19,10 +19,10 @@
 	--space-xl: calc(var(--space-md) * 4);
 
 /* Colours */
-	--color-bg: rgb(30, 30, 110);
-	--color-main: rgb(255, 190, 219);
-	--color-accent: rgb(220, 151, 255);
-	--color-mid: rgb(82, 82, 255);
+	--color-bg: rgb(34, 26, 81);
+	--color-main: rgb(246, 200, 255);
+	--color-accent: rgb(252, 115, 168);
+	--color-mid: rgb(12, 12, 158);
 	--color-hover: rgb(183, 179, 255);
 
 /* Fonts */

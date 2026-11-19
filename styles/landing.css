@@ -1,46 +1,96 @@
-:root {
-	--text-body: 1.2rem;
-	--text-sm: calc(var(--text-body) * 0.8);
-	--text-h1: calc(var(--text-body) * 4);
+/* Landing page */
 
+/* Cover as a dark band, like the front of a book */
+.cover {
+	color: var(--color-main);
+	background-color: var(--color-bg);
+	padding: var(--space-lg) var(--space-sm);
 
-	--space-md: calc(var(--text-body) * 1.5);
-	--space-sm: calc(var(--space-md) / 2);
-	--space-lg: calc(var(--space-md) * 2);
+	p {
+		font-size: var(--text-md);
+		margin-block: var(--space-md) 0;
+	}
 }
 
-body {
-	font-family: Helvetica, sans-serif;
-	font-size: var(--text-body);
-	line-height: 1.5;
-	padding: var(--space-lg) var(--space-md);
+/* Contents on a light band so the coloured chapter blocks stand out */
+.contents {
+	color: var(--color-bg);
+	background-color: var(--color-main);
+
+	h2 {
+		color: var(--color-bg);
+	}
+
+	ol {
+		list-style: none;
+	}
 }
 
-/* Title */
-h1 {
-	font-size: var(--text-h1);
+/* Each chapter as a block in its own article's colours */
+.chapter {
+	color: var(--color-main);
+	background-color: var(--color-bg);
+	padding: var(--space-md);
 	margin-block-end: var(--space-sm);
-}
 
-header p,
-footer {
-	font-size: var(--text-sm);
-}
-
-/* Sketch links */
-nav {
-	font-size: var(--text-);
-	margin-block-start: var(--space-lg);
-
-	li {
-		margin-block-end: var(--space-sm);
+	/* Chapter titles in Bebas, like every other title in the book */
+	h3 {
+		font-family: var(--font-heading);
+		font-size: var(--text-h2);
+		font-weight: 400;
+		line-height: 1;
 	}
 
-	a {
-		color: black;
+	/* Chapter number in Bebas, like 01, 02, 03 */
+	.number {
+		font-family: var(--font-heading);
+		font-size: var(--text-md);
+		color: var(--color-accent);
+		margin-block-end: 0;
+	}
+
+	.author {
+		font-size: var(--text-sm);
+		color: var(--color-accent);
+	}
+
+	p:last-child {
+		margin-block-end: 0;
 	}
 }
 
-footer {
-	margin-block-start: var(--space-lg);
+/* Each chapter uses the same colours as its article */
+.gradients {
+	--color-bg: rgb(30, 30, 110);
+	--color-main: rgb(255, 190, 219);
+	--color-accent: rgb(220, 151, 255);
+}
+
+.feeling {
+	--color-bg: rgb(34, 34, 34);
+	--color-main: seashell;
+	--color-accent: rgb(255, 117, 179);
+}
+
+.identities {
+	--color-bg: rgb(28, 58, 46);
+	--color-main: rgb(250, 244, 222);
+	--color-accent: rgb(255, 196, 92);
+}
+
+/* Wide screens: all three chapters side by side, 4 columns each, with their parts lined up across the row */
+@media (width > 1000px) {
+	.contents ol {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: var(--space-sm);
+	}
+
+	.chapter {
+		grid-column: span 4;
+		grid-row: span 4;
+		display: grid;
+		grid-template-rows: subgrid;
+		margin-block-end: 0;
+	}
 }
