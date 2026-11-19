@@ -1,25 +1,16 @@
-/* Cover as a dark band */
-.cover {
-	color: var(--color-main);
-	background-color: var(--color-bg);
-	padding: var(--space-lg) var(--space-sm);
+/* Landing page */
 
-/* Key words of the title bigger */
-.title-key {
-		display: block;
-		font-size: var(--text-title-key);
-	}
-
-	p {
-		font-size: var(--text-md);
-		margin-block: var(--space-md) 0;
-	}
-}
-
-/* Contents on a light band so the coloured article blocks stand out */
-.contents {
+/* The cover, contents and colophon on one light background so they read as one page */
+main {
 	color: var(--color-bg);
 	background-color: var(--color-main);
+
+	/* Every section stays light here, instead of the colour bands the articles use */
+	section {
+		color: var(--color-bg);
+		background-color: var(--color-main);
+		padding-block: var(--space-md);
+	}
 
 	h2 {
 		color: var(--color-bg);
@@ -30,12 +21,35 @@
 	}
 }
 
-/* Each article as a block in its own colours */
+/* Book title and intro, with the same space below the nav as the article titles */
+main > header {
+	text-align: center;
+
+	padding-block-start: var(--space-lg);
+	padding-block-end: var(--space-md);
+	padding-inline: var(--space-sm);
+
+	p {
+		margin-block: var(--space-md) 0;
+	}
+}
+
+/* Each chapter as a block in its own article's colours */
 .chapter {
 	color: var(--color-main);
 	background-color: var(--color-bg);
 	padding: var(--space-md);
 	margin-block-end: var(--space-sm);
+
+	/* Chapter titles in the chapter's light colour, accent on hover */
+	h2 a {
+		color: var(--color-main);
+		text-decoration: none;
+
+		&:hover {
+			color: var(--color-accent);
+		}
+	}
 
 	.author {
 		font-size: var(--text-sm);
@@ -49,9 +63,9 @@
 
 /* Each chapter uses the same colours as its article */
 .gradients {
-	--color-bg: rgb(30, 30, 110);
-	--color-main: rgb(255, 190, 219);
-	--color-accent: rgb(220, 151, 255);
+	--color-bg: rgb(12, 12, 158);
+	--color-main: rgb(231, 202, 237);
+	--color-accent: rgb(252, 115, 168);
 }
 
 .feeling {
@@ -68,7 +82,7 @@
 
 /* Wide screens: all three chapters side by side, 4 columns each, with their parts lined up across the row */
 @media (width > 1000px) {
-	.contents ol {
+	main ol {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--space-sm);
@@ -76,7 +90,7 @@
 
 	.chapter {
 		grid-column: span 4;
-		grid-row: span 4;
+		grid-row: span 3;
 		display: grid;
 		grid-template-rows: subgrid;
 		margin-block-end: 0;
