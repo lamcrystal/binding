@@ -1,6 +1,6 @@
 /* Landing page */
 
-/* Cover as a dark band, like the front of a book */
+/* Cover as a dark band */
 .cover {
 	color: var(--color-main);
 	background-color: var(--color-bg);
